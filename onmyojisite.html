@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<script src="onmyojisite.js"></script>
+	<head>
+			<title>SBDNFG2 Onmyoji</title>
+			<link rel="stylesheet" href="onmyojisite.css">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+	<p><h1><center>Somewhat Boiled Down, No Frills Guide to Onmyoji</h1></p></center>
+	<center><img alt="Onmyoji logo"src='https://www.hgunified.com/wp-content/uploads/2018/01/5-3.png'></center>
+	<div class="intro">
+		<center><p><h2>What is Onmyoji?</p></h2></center>
+		<br>(Steam description) Onmyoji is a turn-based fantasy strategy game with PVP or PVE battles, where you can strengthen your beloved shikigami to build your</br>
+		<p>	dream tactical team and defeat various demons to become the ultimate onmyoji. Cross-platform play available for both Steam and English mobile versions.</p>
+		<p><a href="https://en.onmyojigame.com/">Click here to go to the Official Game Website (Download locations on bottom of official site)</a></p>
+	</div class="intro">
+	<p><button type="button"
+	onclick="hideintro()">Hide Intro</button>
+	<button type="button"
+	onclick="showintro()">Show Intro</button></p>
+
+
+ <div class="tab">
+   <button class="tablinks" onclick="openTab(event, 'Units')">Units</button>
+   <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+   <button class="tablinks" onclick="openTab(event, 'BattleSystem')">Battle System</button>
+ </div>
+
+
+<div id="Units" class="tabcontent">
+	<p><h2><center>Units</h2></p></center>
+	<p><h6><center>(referred to as "shikigami" in-game, but are called "units" here for the sake of simplicity)</p></h2></center>
+	<p><h3>Summoning!</h3> Your primary source of obtaining new units. Unfortunately it is RNG/luck based. The summoning chance correlates with the rarity of a unit, which goes from N, R, SR, SSR/SP, highest to lowest.</p>
+	<hr width="5%" align="left">
+	<p><h3>Roles!</h3> Each unit you summon plays a specific role. Put simply, they are either a damage dealer or support. Although, those two categories <em>can</em> be split down even further into the following.
+	<hr width="5%" align="left">
+
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+ <!-- Full-width images with number and caption text -->
+ <div class="mySlides fade">
+	 <div class="numbertext">1 / 7</div>
+	 <center><img alt="Picture of Hakuro, a Single Target DPS"src="https://i.pinimg.com/originals/bd/de/85/bdde859ad7fecd4570fa68837ba9d9ca.png" style="width:50%" style="height:50%">
+	 <div class="text">Hakuro (ST DPS)</div></center>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">2 / 7</div>
+	 <center><img alt="Picture of Ootengu, a multi-target DPS"src="https://vignette.wikia.nocookie.net/onmyoji/images/5/5b/217skin1.png/revision/latest?cb=20170330161432" style="width:50%" style="height:50%">
+	 <div class="text">Ootengu (AoE DPS)</div></center>
+ </div>
+
+ <div class="mySlides fade">
+ 	<div class="numbertext">3 / 7</div>
+ 	<center><img alt="Picture of Hiyoribo, a healing sustainer"src="https://vignette.wikia.nocookie.net/onmyoji/images/5/5b/297skin1.png/revision/latest?cb=20171230224141" style="width:50%" style="height:50%">
+ 	<div class="text">Hiyoribo (Healer Sustain)</div></center>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">4 / 7</div>
+	 <center><img alt="Picture of Ichimokuren, a shielding sustainer"src="https://static.wixstatic.com/media/e8cafb_af99ff7f179a4be99513acff81906830~mv2.png/v1/fill/w_550,h_550,al_c,q_80,usm_0.66_1.00_0.01/e8cafb_af99ff7f179a4be99513acff81906830~mv2.webp" style="width:50%" style="height:50%">
+	 <div class="text">Ichimokuren (Shield Sustain)</div></center>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">5 / 7</div>
+	 <center><img alt="Picture of Ame Onna, a support unit that can remove debuffs on allies"src="https://vignette.wikia.nocookie.net/onmyoji/images/b/b8/224skin1.png/revision/latest?cb=20170401003428" style="width:50%" style="height:50%">
+	 <div class="text">Ame Onna (Support - Debuff Clenser)</div></center>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">6 / 7</div>
+	 <center><img alt="Picture of Yamausagi, an accelerator unit"src="http://e0.ifengimg.com/03/2018/1211/FD5C0D2216C02F63B3763200A4199F8E79D9C78D_size566_w830_h696.png" style="width:50%" style="height:50%">
+	 <div class="text">Yamausagi (Accelerator)</div></center>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">7 / 7</div>
+	 <center><img alt="Picture of Zashiki, an orb generating unit"src="https://en.onmyojigame.com/pc/fab/20171211105017/data/shishen_big_afterAwake/205.png" style="width:50%" style="height:50%">
+	 <div class="text">Zashiki (Orb Generator)</div></center>
+ </div>
+
+ <!-- Next and previous buttons -->
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ <span class="dot" onclick="currentSlide(5)"></span>
+ <span class="dot" onclick="currentSlide(6)"></span>
+ <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+	<p><strong>ST DPS:</strong> Damage dealers that have strong <strong>S</strong>ingle <strong>T</strong>arget damage skills</p>
+	<p><strong>AoE DPS:</strong> Damage dealers that have strong <strong>A</strong>rea <strong>O</strong>f <strong>E</strong>ffect skills (i.e. can hit more than one target)</p>
+	<p><strong>Sustain:</strong> Helps the team stay alive through healing <em>after</em> damage is taken, or shields to prevent damage <em> beforehand</em></p>
+	<p><strong>Accelerator:</strong> Ensures the team can act before the enemy (more detail in the "Battle System" segment)</p>
+	<p><strong>Orb Generator:</strong> Generates additional resources for continuous special skill usage
+	<hr width="5%" align="left">
+
+	<p><h3>Stats!</h3></p>
+	<p>Each unit has a statline composed of the following and given a letter rating. DPS will have their statline leaning more towards ATTACK compared to support units whose lines lean towards defensive stats.</p>
+	<p>This is one of the many things that set each unit apart from others in the same role.</p>
+	<hr width="5%" align="left">
+	<p><strong>ATTACK:</strong> Affects how much damage a unit will deal</p>
+	<p><strong>HP:</strong> The amount of health the unit has, once this number reaches 0, they die (can also be interpreted as the numerical value for how much damage a unit can take)
+	<p><strong>DEFENSE:</strong> Affects how much damage the unit will take (LESS defense = MORE damage taken)</p>
+	<p><strong>SPEED:</strong> Affects who acts first in a battle
+	<p><strong>Crit:</strong> The % chance of dealing bonus damage
+	<p><strong>Crit DMG:</strong> What % of the original attack gets added when dealing a Crit. If x = orignial amount of damage, x + CritDMG(x) = Total bonus damage
+	<p><strong>Effect Hit:</strong> The additional % chance of an extra effect taking place if applicanble. So, if an attack has a 10% base chance of stunning the target, the game takes base chance + Effect Hit = actual % chance of stunning
+	<p><strong>Effect RES:</strong> The % chance of <strong>RESISTING</strong> additional effects. Pretty much the same way DEF is for ATK
+	<hr width="5%" align="left">
+	<center><p><em>Side-by-Side Comparison of a DPS Statline(l) and a Support Statline(r)</em>
+	<p><img alt="Displays high Attack, Crit, and Crit Damage but low Defense and HP" src="https://media.discordapp.net/attachments/500328184512774164/593515356275081223/haku.PNG">
+	<img alt="Displays low Attack, Crit, and Crit Damage, but high Defense and HP "src="https://media.discordapp.net/attachments/500328184512774164/593515357193633822/ren.PNG"></p></center>
+</div>
+
+<div id="Skills" class='tabcontent'>
+	<p><h2><center>Skills</h2></p></center>
+	<p><center><img alt="Skill with Definitions on bottom" src="https://cdn.discordapp.com/attachments/500328184512774164/593514057324167181/Capture.PNG"><img alt="Picture with Level Up Effects on bottom" src="https://media.discordapp.net/attachments/500328184512774164/593514051925966851/2.PNG"></center></p>
+	<br>1. <strong>Name</strong></br>
+	<br>2. <strong>Cost:</strong> How many orbs they cost (more info on orbs under 'Battle System'). This line may say "Passive" which is a persisitent effect that could have conditions for activating.</br>
+	<br>3. <strong>Quote:</strong> A line said by the unit in relation to the skill</br>
+	<br>4. <strong>Skill Level:</strong> The higher this level, the more powerful the skill is (increased with black darumas or duplicate units)</br>
+	<br>5. <strong>Description:</strong> Details on what the skill does</br>
+	<br>6. <strong>Definitions:</strong> Defines terms in the description highlighted in blue</br>
+	<br>7. <strong>Level Up Effects:</strong> Details on how each level up affects the skill</br>
+</div>
+
+<div id="BattleSystem" class='tabcontent'
+	<p><h2><center>Battle System</h2></p></center>
+	<br><center><h5><em>Battle System Showcase</br></center></em></h5>
+	<p><center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7BUldccxrDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center></p>
+	<p><h3>The Process</h3></p>
+	<br>1. Select which units you'll bring into the battle</br>
+	<br>2. The unit with the highest speed goes first and the next fastest follow.</br>
+	<br>3. Each unit can perform one skill each turn. Units usually have 3 skills or 2 skills and a passive.</br>
+	<br>4. Select your target(s)</br>
+	<br>5. An animation will play showing the skill.</br>
+	<p>6. Repeat until either side loses all their units</p>
+
+	<p><h3>The UI</p></h3>
+	<p><center><img alt="picture of battle interface"src="battle.jpg"></p></center>
+	<br>1. Boss HP bar (if applicable)</br>
+	<br>2. Enemy Units</br>
+	<br>3. Your Units</br>
+	<br>4. Movement bar: displays who will move next. Ally = Yellow, Enemy = Red</br>
+	<br>5. Health bar. Blue Icons = buffs, Red Icons = debuffs</br>
+	<br>6. Current Unit's skills</br>
+	<br>7. Current Unit's Soul set</br>
+	<br>8. Orb Bar: Each ally turn increases the blue segments at the bottom by 1. When the bottom bar fills, you gain +3/4/5 orbs (blue flames).</br>
+	<br>The amount increases each turn to a maximum of 5.</br>
+	<br>9. Auto/Manual and Battle Speed options</br>
+</div>
+
+
+
+	<h3><strong>Useful Websites</strong></h3>
+
+	<!-- Bounty Locations link-->
+	<br><a href="https://www.reddit.com/r/Onmyoji/">Onmyoji Reddit!</a></br>
+	<br><a href="https://onmyojiguide.com/">More in-depth guide!</a></br>
+	<br><a href="https://onmyojiguide.com/guide/bounty-list/">Bounty/Seal Locations!</a></br>
+	<br><a href="https://onmyojiguide.com/ontamas-list/">Soulsets List!</a></br>
+
+	</body>
+</html>
